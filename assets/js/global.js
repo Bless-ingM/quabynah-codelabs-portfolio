@@ -2,6 +2,6 @@ $(document).ready(function() {
 
     // Add smoothscroll
     var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 300
+        speed: 550
     });
 });

@@ -7,12 +7,9 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Dennis Kwabena Bilson"
-    />
+    <meta name="author" content="Dennis Kwabena Bilson" />
     <meta name="generator" content="Jekyll v3.8.5" />
-    <title>Quabynah Codelabs · Apps</title>
+    <title>Quabynah Codelabs · Home</title>
 
     <!-- Styles -->
     <link
@@ -22,14 +19,16 @@
       crossorigin="anonymous"
     />
     <link href="./assets/css/global.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/cover.css" />
     <link href="./assets/css/main.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="text-center">
     <!-- Header -->
     <nav class="site-header sticky-top py-1">
       <div
-        class="container d-flex flex-column flex-md-row justify-content-between">
+        class="container d-flex flex-column flex-md-row justify-content-between"
+      >
         <a class="py-2" href="./main.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -81,34 +80,44 @@
     </nav>
 
     <!-- Cover -->
-    <div id="cover">
+    <div class="section section-top" id="cover">
       <div
-        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light"
       >
         <div class="col-md-5 p-lg-5 mx-auto my-5">
           <h1 class="display-4 font-weight-normal">Quabynah Codelabs</h1>
           <p class="lead font-weight-normal">
             ...we are a complete solution for developers &amp; designers
           </p>
-          <p class="header-content"><a href="./main.html">Quabynah Codelabs</a> is focused on designing and creating world-class applications for the business environment. We specialize in developing professional applications for Android, iOS and the Web.</p>
+          <p class="header-content my-5">
+            <a href="./main.html">Quabynah Codelabs</a> is focused on designing
+            and creating world-class applications for the business environment.
+            We specialize in developing professional applications for Android,
+            iOS and the Web.
+          </p>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        <div class="product-device-mobile shadow-sm d-none d-md-block"></div>
+        <div
+          class="product-device-mobile product-device-web shadow-sm d-none d-md-block"
+        >
+        </div>
       </div>
     </div>
 
     <!-- Apps -->
     <div class="section section-content" id="apps">
-        <h1 class="display-6 font-weight-normal mt-5 text-center">Applications</h1>
-        <div class="underline"></div>
-        <br>
+      <h1 class="display-6 font-weight-normal mt-5 text-center">
+        Applications
+      </h1>
+      <div class="underline"></div>
+      <br />
       <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
         <div
           class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
         >
           <div class="my-3 p-3">
             <h2 class="display-5">Coded&copy;</h2>
-            <p class="lead">A dating platform for teriary students</p>
+            <p class="lead">A dating platform for tertiary students</p>
             <a target="__blank" href="#download" class="text-center">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Get_it_on_Google_play.svg"
@@ -167,13 +176,18 @@
           <div class="bg-white shadow-sm mx-auto app-bg"></div>
         </div>
       </div>
+      <div class="text-center justify-content center my-5">
+        <a class="btn btn-secondary" href="./apps.html">Show more products</a>
+      </div>
     </div>
 
     <!-- About -->
     <div class="about section section-content text-center" id="about">
-      <h1 class="display-6 font-weight-normal mt-5">Developers &amp; Designers</h1>
+      <h1 class="display-6 font-weight-normal mt-5">
+        Developers &amp; Designers
+      </h1>
       <div class="underline"></div>
-      <br>
+      <br />
       <p class="header-subtitle">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
         accusantium magnam facere nihil dolor distinctio delectus dolores ut
@@ -187,10 +201,9 @@
 
     <!-- Contact Us -->
     <div class="contact section section-content text-center" id="contact">
-        <h1 class="display-6 font-weight-normal mt-5 text-center">Contact Us</h1>
-        <div class="underline"></div>
-        <br>
-        
+      <h1 class="display-6 font-weight-normal mt-5 text-center">Contact Us</h1>
+      <div class="underline"></div>
+      <br />
     </div>
 
     <!-- Footer -->
@@ -198,7 +211,10 @@
       <div class="inner">
         <p>
           Official website for
-          <a data-scroll href="#cover">Quabynah Codelabs</a>
+          <a data-scroll href="#cover">Quabynah Codelabs</a>&copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
           <!-- <a target="__blank" href="https://www.facebook.com/sir.bilson"
             >Dennis K. Bilson (C.E.O)</a
           >. -->
@@ -224,6 +240,6 @@
     ></script>
     <!-- Smooth Scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/global.js"></script>
   </body>
 </html>
