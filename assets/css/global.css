@@ -1,46 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway:400,600&display=swap');
-body, html {
-    font-family: 'PT Sans', sans-serif;
-    background-color: #fff;
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|Raleway:400,600&display=swap");
+body,
+html {
+  font-family: "PT Sans", sans-serif;
+  background-color: #fff;
 }
 
-  /*
+/*
    * Custom translucent site header
    */
-  
-   .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
-    color: #999;
-    transition: ease-in-out color .15s;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
 
-  /*
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color 0.15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
  * Cover
  */
 .cover {
-    padding: 0 1.5rem;
-  }
-  .cover .btn-lg {
-    padding: .75rem 1.25rem;
-    font-weight: 700;
-  }
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+}
 
 /*
  * Footer
  */
 .mastfoot {
-    color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .mastfoot-light {
-    color: rgba(0, 0, 0, .4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
+.app-bg {
+  width: 80%;
+  height: 300px;
+  border-radius: 21px 21px 0 0;
+}
