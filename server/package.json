@@ -4,7 +4,7 @@
   "description": "Quabynah Codelabs portfolio website",
   "main": "index.js",
   "scripts": {
-    "serve": "nodemon index.js"
+    "serve": "nodemon core/app.js"
   },
   "keywords": [
     "Programming",

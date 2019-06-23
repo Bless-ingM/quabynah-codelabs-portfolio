@@ -1,7 +1,7 @@
-const app = require('./core/app');
+// const functions = require('firebase-functions');
+// const admin = require('firebase-admin');
+// admin.initializeApp();
+// const app = require('./core/app');
 
-app.get('/',(req, res) => {
-    return res.send({
-        message: "Hello world"
-    })
-});
+// Host to server
+// exports.app = functions.https.onRequest(app);
