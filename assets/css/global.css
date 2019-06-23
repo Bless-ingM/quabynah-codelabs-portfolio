@@ -5,6 +5,54 @@ html {
   background-color: #fff;
 }
 
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", sans-serif;
+}
+p, span {
+  font-family: "Raleway", sans-serif;
+}
+.app-category {
+  font-size: 32px;
+}
+
+/* Profile Avatars */
+.profile-avatar {
+  width: 200px;
+  height: 200px;
+}
+.profile-avatar-small {
+  width: 100px;
+  height: 100px;
+}
+
+/* Profile username */
+.profile-username {
+  font-family: "PT Sans", sans-serif;
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+.profile-desc {
+  margin-top: 10px;
+}
+.profile-position {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+/* Misc */
+.social-media {
+  text-align: center;
+  margin-top: 10px;
+}
+.img-social-logo {
+  height: 36px;
+  width: 36px;
+  
+}
+
 /*
    * Custom translucent site header
    */
