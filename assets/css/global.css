@@ -50,7 +50,7 @@ p, span {
 .img-social-logo {
   height: 36px;
   width: 36px;
-  
+
 }
 
 /*
@@ -184,4 +184,8 @@ a:hover {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.icon {
+  display: inline;
 }

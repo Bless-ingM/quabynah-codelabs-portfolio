@@ -52,6 +52,10 @@
   line-height: 1;
   letter-spacing: -0.05rem;
 }
+.featurette-image {
+  text-align: center;
+    display:block;
+}
 
 /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -73,4 +77,15 @@
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+
+/* Sidebar */
+.advert-section {
+  /* background-color: #222; */
+  /* color: #fff; */
+}
+
+.product-image {
+  width: 4096px;
+  height: 4096px;
 }
