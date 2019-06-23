@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta
+      name="google-signin-client_id"
+      content="quabynah-codelabs.apps.googleusercontent.com"
+    />
+    <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
@@ -26,11 +30,74 @@
     <link href="../assets/css/custom.css" rel="stylesheet" />
     <link href="../assets/css/global.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/cover.css" />
-    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/auth.css" rel="stylesheet" />
   </head>
 
-  <body class="text-center login-page">
-
+  <body class="text-center login-page bg-light">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-md-7 my-auto">
+          <div class="container">
+            <div class="card card-light login-card text-center">
+              <h3 class="card-title display-5 my-5">
+                Welcome to
+                <strong
+                  ><a href="../admin/auth.html">Quabynah Codelabs</a></strong
+                >
+              </h3>
+              <p class="lead text-small text-muted">
+                This is a section restricted to System Administrators of this
+                website. Login with your correct credentials to get started
+              </p>
+              <div class="underline mb-5"></div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group auth-group text-center">
+                    <input
+                      type="email"
+                      class="form-control auth-form"
+                      id="auth_email"
+                      placeholder="Email address"
+                    />
+                    <!-- <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    > -->
+                  </div>
+                  <div class="form-group auth-group">
+                    <input
+                      type="password"
+                      class="form-control auth-form ml-5"
+                      id="auth_password"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <!-- <div class="form-group auth-group form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input auth-form"
+                      id="save_password"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Check me out</label
+                    >
+                  </div> -->
+                  <a href="#login" class="btn btn-outline-primary"
+                    >Login</a
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img
+            src="../assets/img/404_illustration_2x.jpg"
+            alt=""
+            class="img-login"
+          />
+        </div>
+      </div>
+    </div>
 
     <!-- Firebase JS -->
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
@@ -60,6 +127,12 @@
     ></script>
     <!-- Smooth Scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
-    <script src="./assets/js/global.js"></script>
+    <script
+      src="https://apis.google.com/js/platform.js?onload=renderButton"
+      async
+      defer
+    ></script>
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/auth.js"></script>
   </body>
 </html>

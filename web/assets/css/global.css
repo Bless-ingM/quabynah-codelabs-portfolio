@@ -103,7 +103,7 @@ p, span {
   padding-top: 70px;
 }
 
-.section-content .underline {
+.underline {
   display: block;
   height: 3px;
   background-color: #eee;
