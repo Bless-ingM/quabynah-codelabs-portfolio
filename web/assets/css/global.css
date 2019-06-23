@@ -106,8 +106,8 @@ p, span {
 .section-content .underline {
   display: block;
   height: 3px;
-  background-color: #842eaf;
-  width: 290px;
+  background-color: #eee;
+  width: 70px;
   margin: 0 auto;
 }
 
@@ -209,4 +209,10 @@ a:hover {
 
 .disabled {
   cursor: not-allowed;
+}
+
+.img-course {
+  height: 100%;
+  width: 100%;
+  padding: 20px 40px 20px 40px;
 }
