@@ -189,3 +189,19 @@ a:hover {
 .icon {
   display: inline;
 }
+
+.img-badge {
+  width: 100%;
+  height: 290px;
+  padding: 0px 40px 0px 40px;
+  background-color: #eee;
+}
+
+.about {
+  min-height: 650px;
+  align-items: center;
+}
+
+.platform {
+  height: auto;
+}
