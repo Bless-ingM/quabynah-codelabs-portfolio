@@ -18,6 +18,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link href="../assets/css/custom.css" rel="stylesheet" />
     <link href="../assets/css/global.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/apps.css" />
   </head>
@@ -50,7 +51,24 @@
             />
           </svg>
         </a>
-
+        <a
+          data-scroll
+          class="py-2 d-none d-md-inline-block nav-link"
+          href="#beginner"
+          >Beginner</a
+        >
+        <a
+          data-scroll
+          class="py-2 d-none d-md-inline-block nav-link"
+          href="#intermediate"
+          >Intermediate</a
+        >
+        <a
+          data-scroll
+          class="py-2 d-none d-md-inline-block nav-link"
+          href="#advanced"
+          >Advanced</a
+        >
         <a
           data-scroll
           class="py-2 d-none d-md-inline-block nav-link"
@@ -66,9 +84,10 @@
         class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
       >
         <div class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 font-weight-normal">Quabynah Codelabs · Apps</h1>
+          <h1 class="display-4 font-weight-normal">Android Developers</h1>
           <p class="lead font-weight-normal">
-            Showcasing some of our applications
+            Build fast, responsive &amp; beautiful apps with
+            <strong><a href="#">Kotlin for Android</a></strong>
           </p>
         </div>
         <div class="product-device-mobile shadow-sm d-none d-md-block"></div>
@@ -78,61 +97,450 @@
       </div>
     </div>
 
-    <main role="main">
-      <div class="container marketing" id="products-grid">
-        <hr class="featurette-divider" />
-
-        <!-- First -->
-        <div class="row featurette">
-          <div class="col-md-7 order-md-1">
-            <h2 class="featurette-heading">
-              Basics in HTML, CSS &amp; JavaScript
-              <span class="text-muted app-category"
-                >14.5 hours</span
+    <!-- Beginner -->
+    <div class="container section section-content section-info" id="beginner">
+      <h1 class="display-6 font-weight-normal text-center">Beginner</h1>
+      <div class="underline mb-5"></div>
+      <br />
+      <main role="main">
+        <div class="container marketing" id="products-grid">
+          <!-- First -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Why Android... &amp; Kotlin?
+                <span class="text-muted app-category">45 mins</span>
+              </h2>
+              <p class="">
+                This tutorial explains why Kotlin will be used as the primary
+                programming language for Android development in
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
               >
-            </h2>
-            <p class="">
-              A robust application which bridges the gap between service
-              providers and customers
-            </p>
-            <a
-              target="__blank"
-              href="https://play.google.com/store/apps/details?id=dev.jamalfarms"
-              class="text-center"
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Get_it_on_Google_play.svg"
-                alt="play_logo"
-              />
-            </a>
-            <a target="__blank" href="#" class="text-center">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
-                alt="play_logo"
-              />
-            </a>
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
           </div>
-          <div class="col-md-5 order-md-2">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="4096"
-              height="4096"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 4096x4096"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
-            </svg>
-          </div>
-        </div>
 
-        <hr class="featurette-divider" />
-      </div>
-    </main>
+          <hr class="featurette-divider" />
+
+          <!-- Second -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Kotlin Fundamentals
+                <span class="text-muted app-category">1 hr</span>
+              </h2>
+              <p class="">
+                Learn the building blocks of Android application development
+                with Kotlin.
+                <strong>Classes, variables, functions, arrays</strong> among
+                others will be our main focus in this tutorials
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <!-- Third -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Android Studio IDE
+                <span class="text-muted app-category">25 mins</span>
+              </h2>
+              <p class="">
+                Be conversant with the official Integrated Development
+                Environment (IDE) for Android development
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <!-- Fourth -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Hello Android!
+                <span class="text-muted app-category">30 mins</span>
+              </h2>
+              <p class="">
+                Build your first Android Application
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <!-- Fifth -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Application Fundamentals
+                <span class="text-muted app-category">2 hrs</span>
+              </h2>
+              <p class="">
+                Learn the building blocks of any Android application
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <!-- Sixth -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Working with Lists
+                <span class="text-muted app-category">2 hrs</span>
+              </h2>
+              <p class="">
+                Learn how to populate an activity with a list of data. In this
+                tutorial we will be learning the basics of
+                <strong><a href="#rv">RecyclerViews</a></strong>
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <!-- Seventh -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Project:
+                <a class="text-secondary" href="#quicknotes">QuickNotes</a>
+                <!-- <span class="text-muted app-category">Beginner</span> -->
+              </h2>
+              <p class="">
+                Build your first full android application. In this tutorial, you
+                will learn how to create a notes-keeping application.
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+        </div>
+      </main>
+    </div>
+
+    <!-- Intermediate -->
+    <div
+      class="container section section-content section-info"
+      id="intermediate"
+    >
+      <h1 class="display-6 font-weight-normal text-center">Intermediate</h1>
+      <div class="underline mb-5"></div>
+      <br />
+      <main role="main">
+        <div class="container marketing" id="intermediate-grid">
+          <!-- First -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Search Filter in RecyclerView
+                <span class="text-muted app-category">3 hrs</span>
+              </h2>
+              <p class="">
+                Creating search feature within an
+                <strong
+                  ><a href="#activity"><em>Activity</em></a></strong
+                >
+                containing a
+                <strong
+                  ><a href="#rv"><em>RecyclerView</em></a></strong
+                >
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <!-- Second -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Working with Architecture Components
+                <span class="text-muted app-category">5 hrs</span>
+              </h2>
+              <p class="">
+                Use Room persistence library, LiveData &amp; ViewModels in real
+                world applications
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <!-- Third -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Project :
+                <strong
+                  ><a class="text-secondary" href="#swiftchat"
+                    >SwiftChat</a
+                  ></strong
+                >
+                <!-- <span class="text-muted app-category">2.2 hrs</span> -->
+              </h2>
+              <p class="">
+                A chat application making use of the Architecture Components
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+        </div>
+      </main>
+    </div>
+
+    <!-- Advanced -->
+    <div class="container section section-content section-info" id="advanced">
+      <h1 class="display-6 font-weight-normal text-center">Advanced</h1>
+      <div class="underline mb-5"></div>
+      <br />
+      <main role="main">
+        <div class="container marketing" id="advanced-grid">
+          <!-- First -->
+          <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading">
+                Navigation Fragments
+                <span class="text-muted app-category">2.5 hrs</span>
+              </h2>
+              <p class="">
+                Using the new
+                <strong
+                  ><a target="__blank" href="#navigation_fragments"
+                    ><em>Navigation Fragments</em></a
+                  ></strong
+                >
+              </p>
+              <a class="btn btn-outline-danger" href="#play_video">Play</a>
+              <a class="btn btn-outline-primary" href="#download_resources"
+                >Download project resources</a
+              >
+            </div>
+            <div class="col-md-5 order-md-2">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="4096"
+                height="4096"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 4096x4096"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">4096x4096</text>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+        </div>
+      </main>
+    </div>
 
     <!-- Footer -->
     <footer class="container py-5 text-center mastfoot-light mt-auto">
