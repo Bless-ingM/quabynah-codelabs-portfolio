@@ -12,7 +12,7 @@ html, body {
 
 .login-card {
     border-radius: 12px;
-    padding: 20px 40px 20px 40px;
+    padding: 40px 40px 40px 40px;
 }
 
 .login-image {
@@ -62,6 +62,4 @@ html, body {
 
   .auth-form {
       width: 300px;
-      float: left;
-      margin-left: 12px;
   }

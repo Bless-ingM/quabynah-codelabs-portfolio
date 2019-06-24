@@ -13,7 +13,7 @@
     <meta name="description" content="" />
     <meta name="author" content="Dennis Kwabena Bilson" />
     <meta name="generator" content="Jekyll v3.8.5" />
-    <title>Quabynah Codelabs · Admin Auth</title>
+    <title>Quabynah Codelabs · Dashboard</title>
 
     <!-- Font Awesome -->
     <link
@@ -30,71 +30,68 @@
     <link href="../assets/css/custom.css" rel="stylesheet" />
     <link href="../assets/css/global.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/cover.css" />
-    <link href="../assets/css/auth.css" rel="stylesheet" />
+    <link href="../assets/css/dashboard.css" rel="stylesheet" />
   </head>
+  <body class="text-center bg-light dashboard-page">
+    <!-- Header -->
+    <nav class="site-header sticky-top py-1">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between"
+      >
+        <a class="py-2" href="./index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="d-block mx-auto"
+            role="img"
+            viewBox="0 0 24 24"
+            focusable="false"
+          >
+            <title>Quabynah Codelabs</title>
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
+            />
+          </svg>
+        </a>
 
-  <body class="text-center login-page bg-light">
-    <div class="container login-card ">
-      <div class="card card-responsive card-light text-center">
-        <div class="card-title">
-          <!-- <h6 class="my-5">Welcome back to,</h6> -->
-          <h3 class=" display-5 mt-5">
-            <strong>Quabynah Codelabs</strong>
-          </h3>
-          <p class="lead text-small text-muted text-center mr-5 ml-5">
-            This is a section restricted to System Administrators of this
-            website. Login with your correct credentials to get started
+        <a
+          data-scroll
+          class="py-2 d-none d-md-inline-block nav-link"
+          href="#top"
+          >Dashboard</a
+        >
+        <a
+          data-scroll
+          class="py-2 d-none d-md-inline-block nav-link"
+          href="#tutorials"
+          >Tutorials</a
+        >
+        <a
+          data-scroll
+          class="py-2 d-none d-md-inline-block nav-link"
+          href="#apps"
+          >Applications</a
+        >
+      </div>
+    </nav>
+
+    <!-- Cover -->
+    <div class="section section-top" id="cover">
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 font-weight-normal">Quabynah Codelabs</h1>
+          <p class="lead font-weight-normal">
+            ...we are a complete solution for developers &amp; designers
           </p>
         </div>
-        <div class="underline"></div>
-        <div class="card-body  mx-auto d-flex justify-content-center">
-          <form class="form form-responsive mb-5" id="login_form">
-            <div class="form-group col-sm-10 auth-group">
-              <input
-                type="email"
-                class="form-control auth-form"
-                id="auth_email"
-                value="codelbas.quabynah@gmail.com"
-                readonly
-                required
-                placeholder="Email address"
-              />
-            </div>
-            <div class="form-group col-sm-10 auth-group">
-              <input
-                type="password"
-                class="form-control auth-form"
-                id="auth_password"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div class="text-center">
-              <a
-                href="#login_google"
-                id="google_button"
-                target="__self"
-                onclick="googleOAuth()"
-                class="btn btn-outline-error"
-                hidden
-                >Sign in with Google</a
-              >
-              <a
-                href="#login"
-                id="login_button"
-                onclick="login()"
-                class="btn btn-outline-primary"
-                >Login</a
-              >
-            </div>
-          </form>
-        </div>
-
-        <div class="d-flex justify-content-center mb-5">
-          <div class="spinner-grow " role="status" id="loading">
-            <span class="sr-only">Loading...</span>
-          </div>
-        </div>
+        <div class="product-device-mobile shadow-sm d-none d-md-block"></div>
       </div>
     </div>
 
@@ -106,7 +103,7 @@
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-firestore.js"></script>
 
     <!-- Initialize Firebase -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/firebase/init.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/firebase/init.js"></script>
 
     <!-- Core JS -->
     <script
@@ -128,6 +125,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/11.0.0/validator.min.js"></script>
     <script src="../assets/js/global.js"></script>
-    <script src="../assets/js/auth.js"></script>
   </body>
 </html>
