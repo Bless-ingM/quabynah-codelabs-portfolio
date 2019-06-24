@@ -433,8 +433,9 @@
       </h1>
       <div class="underline"></div>
       <br />
-      <!-- First -->
+
       <div class="row designers-row h-100">
+        <!-- First -->
         <div class="col-md-6 py-5 text-center">
           <img
             src="./assets/img/faces/bilson.jpg"
@@ -449,7 +450,7 @@
             I am an android and web enthusiast. I also love python, vue and
             swift!
           </p>
-          <div class="social-media">
+          <div class="social-media" hidden>
             <a
               class="mr-5"
               data-scroll
@@ -493,12 +494,10 @@
             Co-Founder &amp; Lead Android Developer
           </p>
           <p class="profile-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            qui, nemo natus modi, fugit voluptatum necessitatibus ducimus ipsum
-            iste at cumque adipisci incidunt molestias amet animi voluptas,
-            similique distinctio recusandae.
+            I am an android and web enthusiast. I also love python, vue and
+            swift!
           </p>
-          <div class="social-media">
+          <div class="social-media" hidden>
             <a
               class="mr-5"
               data-scroll
@@ -530,45 +529,33 @@
           </div>
         </div>
       </div>
-      <p class="header-subtitle py-5" hidden>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-        accusantium magnam facere nihil dolor distinctio delectus dolores ut
-        aliquid reiciendis. Fugit, odit doloribus. Reprehenderit, delectus quia
-        molestiae eius voluptas eos? Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Vero rem voluptatem quae repudiandae qui sequi,
-        accusantium exercitationem beatae! Assumenda unde porro fugit ea
-        voluptate quo illo, itaque voluptatibus possimus soluta.
-      </p>
     </div>
 
     <!-- Contact Us -->
-    <div class="contact section section-content text-center" id="contact">
+    <div class="contact container section section-content" id="contact">
       <h1 class="display-6 font-weight-normal mt-5">Contact Us</h1>
-      <div class="underline"></div>
-      <br />
-      <div class="card-body  mx-auto d-flex justify-content-center">
-        <form class="form form-responsive mb-5" id="contact_form">
-          <div class="form-group auth-group">
+      <div class="underline mb-5"></div>
+      <div class="card-body mx-auto text-center justify-content-center">
+        <form class="form justify-content-center">
+          <div class="form-group contact-form mx-auto">
             <input
               type="email"
               class="form-control"
-              id="auth_email"
-              value="codelbas.quabynah@gmail.com"
-              required
-              placeholder="Email address"
+              id="contact_email"
+              placeholder="Enter email address..."
             />
           </div>
-          <div class="form-group">
-            <textarea name="Message" id="form_message" cols="30" rows="10"></textarea>
+          <div class="form-group contact-form  mx-auto">
+            <input
+              type="text"
+              class="form-control"
+              id="contact_message"
+              placeholder="Message..."
+            />
           </div>
-          <div class="text-center">
-            <a
-              href="#login"
-              id="login_button"
-              onclick="submitForm()"
-              class="btn btn-outline-primary"
-              >Send message</a>
-          </div>
+          <a href="#submit_form" class="btn btn-outline-primary" onclick="submitForm()">
+            Submit Request
+          </a>
         </form>
       </div>
     </div>
