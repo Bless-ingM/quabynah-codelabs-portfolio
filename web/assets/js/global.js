@@ -18,4 +18,6 @@ $(document).ready(function() {
     speed: 500,
     speedAsDuration: true
   });
+
+  console.log(firebase.auth().currentUser);
 });

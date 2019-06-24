@@ -146,7 +146,7 @@
       <br />
       <div class="row justify-content-center">
         <div class="col-md-6 my-auto">
-          <h3><a href="./main.html">Quabynah Codelabs</a></h3>
+          <h3><a href="./index.html">Quabynah Codelabs</a></h3>
           <p class="header-content">
             is focused on designing and creating world-class applications for
             the business environment. We specialize in developing professional
@@ -543,9 +543,34 @@
 
     <!-- Contact Us -->
     <div class="contact section section-content text-center" id="contact">
-      <h1 class="display-6 font-weight-normal mt-5 text-center">Contact Us</h1>
+      <h1 class="display-6 font-weight-normal mt-5">Contact Us</h1>
       <div class="underline"></div>
       <br />
+      <div class="card-body  mx-auto d-flex justify-content-center">
+        <form class="form form-responsive mb-5" id="contact_form">
+          <div class="form-group auth-group">
+            <input
+              type="email"
+              class="form-control"
+              id="auth_email"
+              value="codelbas.quabynah@gmail.com"
+              required
+              placeholder="Email address"
+            />
+          </div>
+          <div class="form-group">
+            <textarea name="Message" id="form_message" cols="30" rows="10"></textarea>
+          </div>
+          <div class="text-center">
+            <a
+              href="#login"
+              id="login_button"
+              onclick="submitForm()"
+              class="btn btn-outline-primary"
+              >Send message</a>
+          </div>
+        </form>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -567,13 +592,8 @@
 
     <!-- Firebase JS -->
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
-
-    <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-firestore.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/firebase/init.js"></script>
 
     <!-- Core JS -->
     <script
@@ -593,6 +613,9 @@
     ></script>
     <!-- Smooth Scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
+    <!-- Validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/11.0.0/validator.min.js"></script>
     <script src="./assets/js/global.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
