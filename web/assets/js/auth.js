@@ -33,7 +33,7 @@ const login = () => {
     // Do some login
     axios
       .post(
-        "https://us-central1-quabynah-codelabs.cloudfunctions.net/api/user/login",
+        "https://us-central1-quabynah-codelabs.cloudfunctions.net/api/user/login/",
         {
           email: email.val(),
           password: password.val()
@@ -42,14 +42,21 @@ const login = () => {
       .then(function(response) {
         // handle success
         console.log(response);
+        showLoading(false);
+        window.localStorage.setItem("admin-key", response.key);
+        window.location.href = "./dashboard.html";
       })
       .catch(function(error) {
         // handle error
         console.log(error);
+        showLoading(false);
+        alert("Failed to login user");
+        email.prop("disabled", false);
+        password.prop("disabled", false);
+        $("#login_button").attr("disabled", false);
       });
   } else {
-    // alert("Please enter your password");
-    $.notify("Hello World");
+    alert("Please enter your password");
   }
 };
 
