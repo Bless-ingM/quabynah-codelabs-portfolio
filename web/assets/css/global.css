@@ -6,10 +6,16 @@ html {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "PT Sans", sans-serif;
 }
-p, span {
+p,
+span {
   font-family: "Raleway", sans-serif;
 }
 .app-category {
@@ -50,7 +56,6 @@ p, span {
 .img-social-logo {
   height: 36px;
   width: 36px;
-
 }
 
 /*
@@ -215,4 +220,26 @@ a:hover {
   height: 100%;
   width: 100%;
   padding: 20px 40px 20px 40px;
+}
+
+/* Featurettes
+  ------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-divider-small {
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+.featurette-image {
+  text-align: center;
+  display: block;
 }
