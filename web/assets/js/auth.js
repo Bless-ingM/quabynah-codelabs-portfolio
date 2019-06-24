@@ -31,8 +31,25 @@ const login = () => {
     $("#login_button").attr("disabled", true);
 
     // Do some login
+    axios
+      .post(
+        "https://us-central1-quabynah-codelabs.cloudfunctions.net/api/user/login",
+        {
+          email: email.val(),
+          password: password.val()
+        }
+      )
+      .then(function(response) {
+        // handle success
+        console.log(response);
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      });
   } else {
-    alert("Please enter your password");
+    // alert("Please enter your password");
+    $.notify("Hello World");
   }
 };
 

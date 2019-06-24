@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="../assets/css/cover.css" />
     <link href="../assets/css/dashboard.css" rel="stylesheet" />
   </head>
-  <body class="text-center bg-light dashboard-page">
+  <body class="text-center">
     <!-- Header -->
     <nav class="site-header sticky-top py-1">
       <div
@@ -53,7 +53,7 @@
             viewBox="0 0 24 24"
             focusable="false"
           >
-            <title>Quabynah Codelabs</title>
+            <title>Quabynah Codelabs Admin</title>
             <circle cx="12" cy="12" r="10" />
             <path
               d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
@@ -86,14 +86,36 @@
     <div class="section section-top" id="cover">
       <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 font-weight-normal">Quabynah Codelabs</h1>
-          <p class="lead font-weight-normal">
-            ...we are a complete solution for developers &amp; designers
+          <h1 class="display-4 font-weight-normal text-center">
+            Codelabs Dashboard
+          </h1>
+          <p class="lead font-weight-normal text-center">
+            All rights reserved&copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
           </p>
         </div>
         <div class="product-device-mobile shadow-sm d-none d-md-block"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="container py-5 text-center mastfoot-light mt-auto">
+      <div class="inner">
+        <p>
+          Official website for
+          <a data-scroll href="#cover">Quabynah Codelabs</a>&copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+        <div>
+          <img src="https://img.icons8.com/color/48/000000/firebase.png" />
+          <img src="https://img.icons8.com/color/48/000000/mongodb.png" />
+        </div>
+      </div>
+    </footer>
 
     <!-- Firebase JS -->
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
