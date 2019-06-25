@@ -22,6 +22,10 @@ span {
   font-size: 32px;
 }
 
+.app-category-small {
+  font-size: 20px;
+}
+
 /* Profile Avatars */
 .profile-avatar {
   width: 200px;
