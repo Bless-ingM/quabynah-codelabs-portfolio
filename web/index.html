@@ -99,7 +99,7 @@
     </nav>
 
     <!-- Cover -->
-    <div class="section section-top" id="cover">
+    <section class="section section-top" id="cover">
       <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
           <h1 class="display-4 font-weight-normal">Quabynah Codelabs</h1>
@@ -107,19 +107,21 @@
             ...we are a complete solution for developers &amp; designers
           </p>
         </div>
-        <div class="product-device-mobile shadow-sm d-none d-md-block"></div>
       </div>
-    </div>
+    </section>
 
     <!-- Mission -->
-    <div class="container section section-content section-info" id="mission">
+    <section
+      class="container section section-content section-info"
+      id="mission"
+    >
       <h1 class="display-6 font-weight-normal mt-5 text-center">Who we are</h1>
       <div class="underline"></div>
       <br />
       <div class="row">
         <div class="col-md-6 my-auto">
           <img
-            src="./assets/svg/branding.svg"
+            src="./assets/svg/undraw_developer_activity_bv83.svg"
             alt="branding_logo"
             class="img-fluid img-about"
           />
@@ -137,10 +139,10 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Vision -->
-    <div class="container section section-content section-info" id="vision">
+    <section class="container section section-content section-info" id="vision">
       <h1 class="display-6 font-weight-normal mt-5 text-center">What we do</h1>
       <div class="underline"></div>
       <br />
@@ -158,16 +160,16 @@
 
         <div class="col-md-6">
           <img
-            src="./assets/svg/analytics.svg"
+            src="./assets/svg/undraw_code_review_l1q9.svg"
             alt="analytics"
             class="img-fluid img-about"
           />
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Apps -->
-    <div class="section section-content" id="apps">
+    <section class="section section-content" id="apps">
       <h1 class="display-6 font-weight-normal mt-5 text-center">
         Applications
       </h1>
@@ -284,10 +286,10 @@
           >Show more products</a
         >
       </div>
-    </div>
+    </section>
 
     <!-- Tutorials -->
-    <div
+    <section
       class="container about section section-content text-center"
       id="tutorials"
     >
@@ -421,11 +423,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Designers -->
-    <div
-      class="container about section section-content text-center"
+    <section
+      class="container section section-content text-center"
       id="developers"
     >
       <h1 class="display-6 font-weight-normal mt-5">
@@ -436,11 +438,12 @@
 
       <div class="row designers-row h-100">
         <!-- First -->
-        <div class="col-md-6 py-5 text-center">
+        <div class="col-md-6 text-center">
           <img
             src="./assets/img/faces/bilson.jpg"
             alt="profile"
             class="img-fluid profile-avatar rounded-circle"
+            hidden
           />
           <h5 class="profile-username">Bilson, Quabynah D.</h5>
           <p class="text-muted profile-position">
@@ -483,11 +486,12 @@
         </div>
 
         <!-- Second -->
-        <div class="col-md-6 py-5 text-center">
+        <div class="col-md-6 text-center">
           <img
             src="./assets/img/faces/benjamin.jpeg"
             alt="profile"
             class="img-fluid profile-avatar rounded-circle"
+            hidden
           />
           <h5 class="profile-username">Avimenu, Benjamin Q.</h5>
           <p class="text-muted profile-position">
@@ -529,36 +533,30 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Contact Us -->
-    <div class="contact container section section-content" id="contact">
+    <section class="contact container section section-content" id="contact">
       <h1 class="display-6 font-weight-normal mt-5">Contact Us</h1>
       <div class="underline mb-5"></div>
-      <div class="card-body mx-auto text-center justify-content-center">
-        <form class="form justify-content-center">
-          <div class="form-group contact-form mx-auto">
-            <input
-              type="email"
-              class="form-control"
-              id="contact_email"
-              placeholder="Enter email address..."
-            />
-          </div>
-          <div class="form-group contact-form  mx-auto">
-            <input
-              type="text"
-              class="form-control"
-              id="contact_message"
-              placeholder="Message..."
-            />
-          </div>
-          <a href="#submit_form" class="btn btn-outline-primary" onclick="submitForm()">
-            Submit Request
-          </a>
-        </form>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+          <i class="fa fa-phone fa-3x mb-3 text-muted"></i>
+          <div>+233 554 022 344</div>
+          <div>+233 574 753 363</div>
+        </div>
+
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fa fa-envelope fa-3x mb-3 text-muted"></i>
+          <a class="d-block" href="mailto:codelbas.quabynah@gmail.com"
+            >codelbas.quabynah@gmail.com</a
+          >
+          <a class="d-block" href="mailto:benjirro1@gmail.com"
+            >benjirro1@gmail.com</a
+          >
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer container py-5 text-center mastfoot-light mt-auto">
@@ -603,6 +601,5 @@
     <!-- Validator -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/11.0.0/validator.min.js"></script>
     <script src="./assets/js/global.js"></script>
-    <script src="./assets/js/index.js"></script>
   </body>
 </html>

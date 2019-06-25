@@ -146,6 +146,12 @@ span {
   border-radius: 21px;
 }
 
+.product-android {
+  position: absolute;
+  width: 300px;
+  height: 540px;
+}
+
 .product-device-mobile::before {
   position: absolute;
   top: 10%;
