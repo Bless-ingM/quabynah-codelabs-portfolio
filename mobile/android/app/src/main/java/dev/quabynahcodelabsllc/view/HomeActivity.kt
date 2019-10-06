@@ -1,25 +1,22 @@
 package dev.quabynahcodelabsllc.view
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.core.os.bundleOf
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.snackbar.Snackbar
-import dev.codelabs.template.debugger
+import dev.quabynahcodelabsllc.BuildConfig
 import dev.quabynahcodelabsllc.R
 import dev.quabynahcodelabsllc.databinding.ActivityHomeBinding
-import dev.quabynahcodelabsllc.view.apps.AppDetailsFragment
-import dev.quabynahcodelabsllc.view.blog.BlogDetailsFragment
+import kotlinx.android.synthetic.main.nav_header_home.view.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -35,12 +32,20 @@ class HomeActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        fab.setOnClickListener {
+            MaterialAlertDialogBuilder(this).apply {
+                setTitle("Request project")
+                setMessage("This feature is currently under active development and will be available in the next release. Stay tuned")
+                setPositiveButton("Got it") { dialog, _ -> dialog.dismiss() }
+                show()
+            }
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
+        with(navView) {
+            getHeaderView(0).app_version.text =
+                String.format("Installed: %s", BuildConfig.VERSION_NAME)
+        }
         val navController = findNavController(R.id.nav_host_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -57,30 +62,6 @@ class HomeActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-        // Get intent
-        val action = intent?.action
-        if (action == Intent.ACTION_VIEW) {
-            val data = intent?.data
-            debugger("Path from intent: $data")
-            when {
-                data?.path!!.contains("apps") -> {
-                    debugger("App ID: ${data.lastPathSegment}")
-                    navController.navigate(
-                        R.id.nav_app_details,
-                        bundleOf(Pair(AppDetailsFragment.EXTRA_APP_ID, data.lastPathSegment))
-                    )
-                }
-
-                data.path!!.contains("blog") -> {
-                    debugger("Blog ID: ${data.lastPathSegment}")
-                    navController.navigate(
-                        R.id.nav_blog_details,
-                        bundleOf(Pair(BlogDetailsFragment.EXTRA_BLOG_ID, data.lastPathSegment))
-                    )
-                }
-            }
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

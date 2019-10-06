@@ -59,5 +59,8 @@ dependencies {
 
     // Template Theme
     implementation 'com.github.Quabynah-Codelabs.templates:base-template:1.0.2'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
 androidExtensions.experimental = true

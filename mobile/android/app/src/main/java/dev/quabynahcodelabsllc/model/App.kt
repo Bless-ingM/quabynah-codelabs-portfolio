@@ -12,6 +12,7 @@ data class App(
     @PrimaryKey
     val id: String,
     val name: String,
+    val desc: String,
     var icon: String? = null,
     var platform: String = "android",
     var url: String? = null

@@ -24,7 +24,9 @@ class BlogDetailsFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        binding.text.text = arguments?.get(EXTRA_BLOG_ID).toString()
+        binding.text.text = requireActivity().intent?.data?.lastPathSegment ?: arguments?.get(
+            EXTRA_BLOG_ID
+        ).toString()
     }
 
     companion object {
