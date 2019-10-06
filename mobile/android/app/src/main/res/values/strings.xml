@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Quabynah Codelabs LLC</string>
+    <string name="app_desc">is focused on designing and creating world-class applications for the business environment. We specialize in developing professional applications for Android, iOS &amp; the Web.</string>
+    <string name="search_hint">Search Anything…</string>
 </resources>
