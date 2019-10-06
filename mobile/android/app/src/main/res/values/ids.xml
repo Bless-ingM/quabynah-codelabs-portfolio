@@ -3,8 +3,10 @@
     <item name="nav_home" type="id" />
     <item name="nav_about" type="id" />
     <item name="nav_apps" type="id" />
+    <item name="nav_app_details" type="id" />
     <item name="nav_services" type="id" />
     <item name="nav_contact" type="id" />
     <item name="nav_map" type="id" />
     <item name="nav_blog" type="id" />
+    <item name="nav_blog_details" type="id" />
 </resources>

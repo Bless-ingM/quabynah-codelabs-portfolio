@@ -1,9 +1,11 @@
 package dev.quabynahcodelabsllc.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.os.bundleOf
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -13,8 +15,11 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import dev.codelabs.template.debugger
 import dev.quabynahcodelabsllc.R
 import dev.quabynahcodelabsllc.databinding.ActivityHomeBinding
+import dev.quabynahcodelabsllc.view.apps.AppDetailsFragment
+import dev.quabynahcodelabsllc.view.blog.BlogDetailsFragment
 
 class HomeActivity : AppCompatActivity() {
 
@@ -52,6 +57,30 @@ class HomeActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        // Get intent
+        val action = intent?.action
+        if (action == Intent.ACTION_VIEW) {
+            val data = intent?.data
+            debugger("Path from intent: $data")
+            when {
+                data?.path!!.contains("apps") -> {
+                    debugger("App ID: ${data.lastPathSegment}")
+                    navController.navigate(
+                        R.id.nav_app_details,
+                        bundleOf(Pair(AppDetailsFragment.EXTRA_APP_ID, data.lastPathSegment))
+                    )
+                }
+
+                data.path!!.contains("blog") -> {
+                    debugger("Blog ID: ${data.lastPathSegment}")
+                    navController.navigate(
+                        R.id.nav_blog_details,
+                        bundleOf(Pair(BlogDetailsFragment.EXTRA_BLOG_ID, data.lastPathSegment))
+                    )
+                }
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

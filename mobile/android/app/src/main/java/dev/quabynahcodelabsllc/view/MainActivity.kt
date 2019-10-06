@@ -2,8 +2,9 @@ package dev.quabynahcodelabsllc.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import dev.codelabs.template.moveTo
+import dev.codelabs.template.browse
 import dev.quabynahcodelabsllc.databinding.ActivityMainBinding
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.startApp.setOnClickListener {
-            moveTo(HomeActivity::class.java, true)
+            //moveTo(HomeActivity::class.java, true)
+            browse("https://quabynah-codelabs.web.app/blog/${UUID.randomUUID()}")
         }
     }
 }
