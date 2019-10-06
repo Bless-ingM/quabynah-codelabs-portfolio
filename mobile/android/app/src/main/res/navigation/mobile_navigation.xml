@@ -37,7 +37,12 @@
         android:id="@id/nav_services"
         android:name="dev.quabynahcodelabsllc.view.services.ServicesFragment"
         android:label="@string/menu_services"
-        tools:layout="@layout/services_fragment" />
+        tools:layout="@layout/services_fragment">
+        <deepLink
+            android:id="@+id/deepLink4"
+            android:autoVerify="true"
+            app:uri="https://quabynah-codelabs.web.app/services/" />
+    </fragment>
     <fragment
         android:id="@id/nav_blog"
         android:name="dev.quabynahcodelabsllc.view.blog.BlogFragment"
@@ -61,11 +66,21 @@
     <fragment
         android:id="@id/nav_blog_details"
         android:name="dev.quabynahcodelabsllc.view.blog.BlogDetailsFragment"
-        android:label="fragment_blog_details"
-        tools:layout="@layout/fragment_blog_details" />
+        android:label="@string/menu_blog_details"
+        tools:layout="@layout/fragment_blog_details">
+        <deepLink
+            android:id="@+id/blog_deep_link"
+            android:autoVerify="false"
+            app:uri="https://quabynah-codelabs.web.app/blog/{id}" />
+    </fragment>
     <fragment
         android:id="@id/nav_app_details"
         android:name="dev.quabynahcodelabsllc.view.apps.AppDetailsFragment"
         android:label="@string/menu_app_details"
-        tools:layout="@layout/fragment_app_details" />
+        tools:layout="@layout/fragment_app_details">
+        <deepLink
+            android:id="@+id/app_deep_link"
+            android:autoVerify="false"
+            app:uri="https://quabynah-codelabs.web.app/apps/{id}" />
+    </fragment>
 </navigation>

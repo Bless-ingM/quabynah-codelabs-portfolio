@@ -39,55 +39,7 @@
         <activity
             android:name=".view.HomeActivity"
             android:label="@string/app_name">
-
-            <intent-filter android:label="@string/menu_apps">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data
-                    android:host="quabynah-codelabs.web.app"
-                    android:path="/apps"
-                    android:pathPattern="/*"
-                    android:scheme="https" />
-                <data
-                    android:host="quabynah-codelabs.web.app"
-                    android:pathPattern=".*"
-                    android:scheme="apps" />
-            </intent-filter>
-
-            <intent-filter android:label="@string/menu_services">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data
-                    android:host="quabynah-codelabs.web.app"
-                    android:path="/services"
-                    android:scheme="https" />
-                <data
-                    android:host="quabynah-codelabs.web.app"
-                    android:scheme="services" />
-            </intent-filter>
-
-            <intent-filter android:label="@string/menu_blog">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data
-                    android:host="quabynah-codelabs.web.app"
-                    android:path="/blog"
-                    android:pathPattern=".*"
-                    android:scheme="https" />
-                <data
-                    android:host="quabynah-codelabs.web.app"
-                    android:pathPattern="/*"
-                    android:scheme="blog" />
-            </intent-filter>
+            <nav-graph android:value="@navigation/mobile_navigation" />
         </activity>
         <activity
             android:name=".view.MainActivity"
