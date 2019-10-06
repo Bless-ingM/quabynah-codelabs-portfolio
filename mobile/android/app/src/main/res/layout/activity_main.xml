@@ -34,11 +34,10 @@
         android:textAppearance="?textAppearanceBody1" />
 
     <com.google.android.material.button.MaterialButton
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_normal"
-        android:text="Get Started"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:text="@string/get_started"
         android:textAllCaps="false" />
 
     <com.google.android.material.button.MaterialButton
@@ -46,7 +45,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_micro"
-        android:text="About Us"
+        android:text="@string/menu_about"
         android:textAllCaps="false" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
