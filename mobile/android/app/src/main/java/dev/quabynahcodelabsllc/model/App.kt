@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc
+package dev.quabynahcodelabsllc.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

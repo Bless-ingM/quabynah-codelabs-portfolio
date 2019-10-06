@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc.ui.map
+package dev.quabynahcodelabsllc.view.map
 
 import android.os.Bundle
 import android.view.LayoutInflater

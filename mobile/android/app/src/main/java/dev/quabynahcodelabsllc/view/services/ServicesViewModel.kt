@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc.ui.services
+package dev.quabynahcodelabsllc.view.services
 
 import androidx.lifecycle.ViewModel
 

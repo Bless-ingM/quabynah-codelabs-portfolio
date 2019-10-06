@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc.ui.contact
+package dev.quabynahcodelabsllc.view.contact
 
 import androidx.lifecycle.ViewModel
 

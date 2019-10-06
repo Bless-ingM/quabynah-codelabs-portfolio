@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc.ui.services
+package dev.quabynahcodelabsllc.view.blog
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -9,24 +9,24 @@ import android.view.ViewGroup
 
 import dev.quabynahcodelabsllc.R
 
-class ServicesFragment : Fragment() {
+class BlogFragment : Fragment() {
 
     companion object {
-        fun newInstance() = ServicesFragment()
+        fun newInstance() = BlogFragment()
     }
 
-    private lateinit var viewModel: ServicesViewModel
+    private lateinit var viewModel: BlogViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.services_fragment, container, false)
+        return inflater.inflate(R.layout.blog_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(ServicesViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(BlogViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

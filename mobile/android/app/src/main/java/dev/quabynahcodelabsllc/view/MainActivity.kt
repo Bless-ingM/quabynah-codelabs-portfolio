@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc
+package dev.quabynahcodelabsllc.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

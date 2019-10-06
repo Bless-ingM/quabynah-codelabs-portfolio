@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc.ui.home
+package dev.quabynahcodelabsllc.view.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

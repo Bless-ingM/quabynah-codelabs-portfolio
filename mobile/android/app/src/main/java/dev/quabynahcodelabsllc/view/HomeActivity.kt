@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc
+package dev.quabynahcodelabsllc.view
 
 import android.os.Bundle
 import android.view.Menu
@@ -13,6 +13,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import dev.quabynahcodelabsllc.R
 import dev.quabynahcodelabsllc.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {

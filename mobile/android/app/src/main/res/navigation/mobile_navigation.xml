@@ -7,37 +7,37 @@
 
     <fragment
         android:id="@id/nav_home"
-        android:name="dev.quabynahcodelabsllc.ui.home.HomeFragment"
+        android:name="dev.quabynahcodelabsllc.view.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@id/nav_about"
-        android:name="dev.quabynahcodelabsllc.ui.about.AboutFragment"
+        android:name="dev.quabynahcodelabsllc.view.about.AboutFragment"
         android:label="@string/menu_about"
         tools:layout="@layout/about_fragment" />
     <fragment
         android:id="@id/nav_contact"
-        android:name="dev.quabynahcodelabsllc.ui.contact.ContactFragment"
+        android:name="dev.quabynahcodelabsllc.view.contact.ContactFragment"
         android:label="@string/menu_contact"
         tools:layout="@layout/contact_fragment" />
     <fragment
         android:id="@id/nav_map"
-        android:name="dev.quabynahcodelabsllc.ui.map.MapsFragment"
+        android:name="dev.quabynahcodelabsllc.view.map.MapsFragment"
         android:label="@string/menu_map"
         tools:layout="@layout/fragment_maps" />
     <fragment
         android:id="@id/nav_services"
-        android:name="dev.quabynahcodelabsllc.ui.services.ServicesFragment"
+        android:name="dev.quabynahcodelabsllc.view.services.ServicesFragment"
         android:label="@string/menu_services"
         tools:layout="@layout/services_fragment" />
     <fragment
         android:id="@id/nav_blog"
-        android:name="dev.quabynahcodelabsllc.ui.blog.BlogFragment"
+        android:name="dev.quabynahcodelabsllc.view.blog.BlogFragment"
         android:label="@string/menu_blog"
         tools:layout="@layout/blog_fragment" />
     <dialog
         android:id="@+id/nav_apps"
-        android:name="dev.quabynahcodelabsllc.ui.apps.AppListDialogFragment"
+        android:name="dev.quabynahcodelabsllc.view.apps.AppListDialogFragment"
         android:label="@string/menu_apps"
         tools:layout="@layout/fragment_app_list_dialog" />
 </navigation>

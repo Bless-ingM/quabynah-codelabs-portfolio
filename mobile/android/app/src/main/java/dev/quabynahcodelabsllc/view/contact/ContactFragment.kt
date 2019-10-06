@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc.ui.blog
+package dev.quabynahcodelabsllc.view.contact
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -9,24 +9,24 @@ import android.view.ViewGroup
 
 import dev.quabynahcodelabsllc.R
 
-class BlogFragment : Fragment() {
+class ContactFragment : Fragment() {
 
     companion object {
-        fun newInstance() = BlogFragment()
+        fun newInstance() = ContactFragment()
     }
 
-    private lateinit var viewModel: BlogViewModel
+    private lateinit var viewModel: ContactViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.blog_fragment, container, false)
+        return inflater.inflate(R.layout.contact_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(BlogViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(ContactViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

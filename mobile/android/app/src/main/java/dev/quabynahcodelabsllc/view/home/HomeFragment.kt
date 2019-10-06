@@ -1,4 +1,4 @@
-package dev.quabynahcodelabsllc.ui.home
+package dev.quabynahcodelabsllc.view.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
