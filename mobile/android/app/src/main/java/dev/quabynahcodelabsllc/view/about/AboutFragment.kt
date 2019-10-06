@@ -1,33 +1,30 @@
 package dev.quabynahcodelabsllc.view.about
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
-import dev.quabynahcodelabsllc.R
+import androidx.fragment.app.Fragment
+import dev.codelabs.template.browse
+import dev.quabynahcodelabsllc.BuildConfig
+import dev.quabynahcodelabsllc.databinding.AboutFragmentBinding
 
 class AboutFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = AboutFragment()
-    }
-
-    private lateinit var viewModel: AboutViewModel
+    private lateinit var binding: AboutFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.about_fragment, container, false)
+        binding = AboutFragmentBinding.inflate(inflater)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(AboutViewModel::class.java)
-        // TODO: Use the ViewModel
+
+        binding.appVersion.text = String.format("Version %s", BuildConfig.VERSION_NAME)
+        binding.visitWebsite.setOnClickListener { context?.browse("https://quabynah-codelabs.web.app/about") }
     }
 
 }
