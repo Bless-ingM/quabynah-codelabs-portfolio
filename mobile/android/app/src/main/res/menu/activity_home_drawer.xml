@@ -6,31 +6,31 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/twotone_home_24px"
             android:title="@string/menu_home" />
         <item
             android:id="@id/nav_about"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/twotone_business_24px"
             android:title="@string/menu_about" />
         <item
             android:id="@id/nav_map"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/twotone_explore_24px"
             android:title="@string/menu_map" />
         <item
             android:id="@id/nav_services"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/twotone_work_outline_24px"
             android:title="@string/menu_services" />
         <item
             android:id="@id/nav_apps"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/twotone_view_carousel_24px"
             android:title="@string/menu_apps" />
         <item
             android:id="@id/nav_blog"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/twotone_chat_24px"
             android:title="@string/menu_blog" />
         <item
             android:id="@id/nav_contact"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/twotone_account_circle_24px"
             android:title="@string/menu_contact" />
     </group>
 </menu>
