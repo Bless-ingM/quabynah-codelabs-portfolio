@@ -41,13 +41,13 @@ var tos = `<h3>1. Terms</h3>
 `;
 
 $(document).ready(function() {
-  $("#privacy_text").append(
-    privacy
-  ).append(`<section class="section container section-education" id="education">
-                                                <h1 class="display-6 font-weight-normal mt-5 text-center">
-                                                Quabynah Codelabs Terms of Service
-                                                </h1>
-                                                <div class="underline"></div>
-                                                <div class="container marketing pt-5">${tos}</div>
-                                            </section>`);
+//   $("#privacy_text").append(
+//     privacy
+//   ).append(`<section class="section container section-education" id="education">
+//                                                 <h1 class="display-6 font-weight-normal mt-5 text-center">
+//                                                 Quabynah Codelabs Terms of Service
+//                                                 </h1>
+//                                                 <div class="underline"></div>
+//                                                 <div class="container marketing pt-5">${tos}</div>
+//                                             </section>`);
 });
