@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngx-portfolio"
+    }
+  },
+  "defaultProject": "ngx-portfolio",
+  "cli": {
+    "analytics": false
+  }
 }
